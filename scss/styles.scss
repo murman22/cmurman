@@ -574,6 +574,12 @@ body {
     font-weight: lighter;
 }
 
+.sesiones{
+    display: flex;
+    flex-direction: row;
+    @include bp(baby-bear) {flex-direction: column;}
+}
+
 .bigger {
     font-size: 2rem; }
   

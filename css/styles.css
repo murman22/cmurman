@@ -610,6 +610,13 @@ body {
 .font-light {
   font-weight: lighter; }
 
+.sesiones {
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 600px) {
+    .sesiones {
+      flex-direction: column; } }
+
 .bigger {
   font-size: 2rem; }
 
