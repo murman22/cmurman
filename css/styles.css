@@ -106,9 +106,6 @@ body {
     padding-right: 0;
     color: white; }
 
-.cbl {
-  font-size: 1.4rem; }
-
 .logo-box {
   display: flex;
   flex-direction: column;
@@ -218,13 +215,13 @@ body {
       margin: 0;
       padding-left: .25rem;
       padding-right: .25rem; } }
-  .aboutme-text h4, .aboutme-text h3 {
+  .aboutme-text h4 {
     margin-left: 2rem; }
     @media (max-width: 1024px) and (min-width: 600px) {
-      .aboutme-text h4, .aboutme-text h3 {
+      .aboutme-text h4 {
         margin-left: 0; } }
     @media (max-width: 600px) {
-      .aboutme-text h4, .aboutme-text h3 {
+      .aboutme-text h4 {
         margin-left: 0; } }
   .aboutme-text h6 {
     margin-left: 2rem; }
@@ -249,7 +246,11 @@ body {
 .kartikeya-banner {
   width: 100%;
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  object-fit: cover; }
+  @media (max-width: 600px) {
+    .kartikeya-banner {
+      height: 15vh; } }
 
 .kartikeya-header {
   display: flex;
@@ -269,10 +270,10 @@ body {
   object-fit: contain; }
   @media (max-width: 1024px) and (min-width: 600px) {
     .yoga-poses {
-      width: 524px; } }
-
-.c-cfs {
-  font-size: 1.3rem; }
+      width: 424px; } }
+  @media (max-width: 600px) {
+    .yoga-poses {
+      width: 300px; } }
 
 @media (max-width: 600px) {
   .kf-container h1 {
@@ -302,7 +303,10 @@ body {
   object-fit: contain; }
   @media (max-width: 1024px) and (min-width: 600px) {
     .c-1 {
-      width: 450px; } }
+      width: 400px; } }
+  @media (max-width: 600px) {
+    .c-1 {
+      width: 300px; } }
 
 .c-2 {
   height: auto;
@@ -310,7 +314,14 @@ body {
   object-fit: contain; }
   @media (max-width: 1024px) and (min-width: 600px) {
     .c-2 {
-      width: 300px; } }
+      width: 250px; } }
+  @media (max-width: 600px) {
+    .c-2 {
+      width: 200px;
+      padding-top: 1.5rem; } }
+
+.c-cfs {
+  font-size: 1rem; }
 
 .planes-kartikeya {
   display: flex;
@@ -364,16 +375,19 @@ body {
 
 .freshfusion-banner {
   width: 100%;
+  height: 40vh;
   object-fit: cover; }
-  @media (max-width: 1024px) and (min-width: 600px) {
-    .freshfusion-banner {
-      height: 40vh; } }
 
 .freshfusion-header h2 {
   margin: 0;
   font-family: Monster AG;
-  font-size: 3rem;
-  letter-spacing: .2rem; }
+  font-size: 3rem; }
+  @media (max-width: 1024px) and (min-width: 600px) {
+    .freshfusion-header h2 {
+      font-size: 2rem; } }
+  @media (max-width: 600px) {
+    .freshfusion-header h2 {
+      font-size: 1.6rem; } }
 
 .header-plates {
   height: auto;
@@ -389,15 +403,15 @@ body {
 .plates {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly; }
+  justify-content: center; }
   @media (max-width: 600px) {
     .plates {
-      flex-direction: column; } }
+      flex-direction: column;
+      padding-top: 0; } }
   .plates h4 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-top: 0;
-    margin-bottom: 1rem;
-    letter-spacing: .2rem; }
+    margin-bottom: 1rem; }
 
 .dp-1, .dp-2 {
   width: 50vw;
@@ -416,6 +430,9 @@ body {
     .dp-1, .dp-2 {
       width: 100vw;
       text-align: left; } }
+  @media (max-width: 600px) {
+    .dp-1, .dp-2 {
+      flex-direction: column; } }
   .dp-1 h2, .dp-2 h2 {
     margin: 0;
     font-family: Monster AG;
@@ -427,6 +444,9 @@ body {
 
 .dp-2 {
   background-color: #80B834; }
+  @media (max-width: 600px) {
+    .dp-2 {
+      flex-direction: column; } }
 
 .plan-icon {
   height: auto;
@@ -457,26 +477,33 @@ body {
 
 .burger-img {
   width: 40vw;
-  height: 100vh;
+  height: 90vh;
   object-fit: cover; }
   @media (max-width: 1024px) and (min-width: 600px) {
     .burger-img {
       width: 100%; } }
+  @media (max-width: 600px) {
+    .burger-img {
+      width: 100%; } }
   @media (max-width: 1024px) and (min-width: 600px) {
     .burger-img {
-      height: 30vh; } }
+      height: 50vh; } }
+  @media (max-width: 600px) {
+    .burger-img {
+      height: 50vh; } }
 
 .mealprep-info {
   text-align: center;
   justify-content: center;
   padding-left: 15vw;
+  padding-right: 5vw;
   padding-top: 5vw; }
   @media (max-width: 1024px) and (min-width: 600px) {
     .mealprep-info {
       padding: 0; } }
   @media (max-width: 600px) {
     .mealprep-info {
-      padding: 0; } }
+      padding-left: 5vw; } }
   .mealprep-info h1 {
     margin: 0;
     font-size: 3.3rem; }
@@ -511,16 +538,16 @@ body {
 .asesoria, .clase-cocina {
   background-color: #91D022;
   color: white;
-  font-weight: 800;
   border-radius: 25px;
-  font-size: 2.2rem; }
+  letter-spacing: .2rem; }
   @media (max-width: 1024px) and (min-width: 600px) {
     .asesoria, .clase-cocina {
-      margin-left: 25vw;
-      margin-right: 25vw; } }
-
-.lps {
-  font-size: 2.2rem; }
+      margin-right: 25vw;
+      margin-left: 25vw; } }
+  @media (max-width: 600px) {
+    .asesoria, .clase-cocina {
+      margin-right: 15vw;
+      margin-left: 15vw; } }
 
 .cocinaimg {
   position: relative;
@@ -548,12 +575,11 @@ body {
   margin-right: 25vw;
   margin-left: 25vw; }
 
-.clase-cocina {
-  font-size: 2.4rem; }
-  .clase-cocina h1 {
-    margin: 0; }
-  .clase-cocina h5 {
-    margin: 0; }
+.clase-cocina h1 {
+  margin: 0; }
+
+.clase-cocina h5 {
+  margin: 0; }
 
 .delivery {
   align-items: center; }
@@ -562,6 +588,12 @@ body {
   width: 600px;
   height: auto;
   object-fit: cover; }
+  @media (max-width: 1024px) and (min-width: 600px) {
+    .mf-img {
+      width: 500px; } }
+  @media (max-width: 600px) {
+    .mf-img {
+      width: 300px; } }
 
 .mf-cg {
   display: flex;
@@ -572,18 +604,24 @@ body {
 .mf-bg {
   background-color: #0F2051;
   color: white;
-  border-radius: 15px;
+  border-radius: 25px;
   font-weight: lighter; }
 
 .font-light {
   font-weight: lighter; }
+
+.bigger {
+  font-size: 2rem; }
+
+.mediumer {
+  font-size: 1.5rem; }
 
 .mfplan {
   display: flex;
   width: 600px;
   height: auto;
   object-fit: cover; }
-  @media (max-width: 1024px) and (min-width: 600px) {
+  @media (max-width: 600px) {
     .mfplan {
       display: none; } }
 
@@ -592,7 +630,7 @@ body {
   width: auto;
   height: 500px;
   object-fit: cover; }
-  @media (max-width: 1024px) and (min-width: 600px) {
+  @media (max-width: 600px) {
     .mfplanv {
       display: flex; } }
 
@@ -618,15 +656,11 @@ body {
   color: white;
   border-radius: 25px; }
 
-.bigger {
-  font-size: 2rem; }
-
-.mediumer {
-  font-size: 1.5rem; }
-
 #crisfooter {
   background-color: #000000;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: row; }
   #crisfooter a {
     color: white; }
     #crisfooter a:visited {
@@ -635,6 +669,13 @@ body {
       color: white; }
     #crisfooter a:active {
       color: white; }
+
+.footerrow {
+  display: flex;
+  flex-direction: row; }
+  @media (max-width: 600px) {
+    .footerrow {
+      flex-direction: column; } }
 
 .instafooter {
   width: 25px;
@@ -781,6 +822,11 @@ body {
 .px-5 {
   padding-right: 3rem !important;
   padding-left: 3rem !important; }
+
+@media (max-width: 600px) {
+  .px-s-0 {
+    padding-right: .0 !important;
+    padding-left: .0 !important; } }
 
 .py-1 {
   padding-top: .25rem !important;
