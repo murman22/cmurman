@@ -127,6 +127,9 @@ body {
     align-items: center;
 }
 
+.cbl{
+    font-size: 1.4rem;
+}
 
 .logo-box{
     display: flex;
@@ -222,7 +225,7 @@ body {
     @include bp(teen-bear) {text-align: center; margin: 0; padding-left: .25rem; padding-right: .25rem;}
     @include bp(baby-bear) {text-align: center; margin: 0; padding-left: .25rem; padding-right: .25rem;}
     width: 85vw;
-    h4 { 
+    h4, h3 { 
         margin-left: 2rem;
         @include bp(teen-bear) {margin-left: 0}
         @include bp(baby-bear) {margin-left: 0;}
@@ -265,9 +268,12 @@ body {
 .yoga-poses{
     height: auto;
     width: 624px;
-    @include bp(teen-bear) {width: 424px;}
-    @include bp(baby-bear) {width: 300px;}
+    @include bp(teen-bear) {width: 524px;}
     object-fit: contain;
+}
+
+.c-cfs{
+    font-size: 1.3rem;
 }
 
 .kf-container{
@@ -289,9 +295,7 @@ body {
 .c-1 {
     height: auto;
     width: 550px;
-    @include bp(teen-bear) {width: 400px;}
-    @include bp(baby-bear) {width: 300px;}
-
+    @include bp(teen-bear) {width: 450px;}
     object-fit: contain;
 }
 
@@ -299,8 +303,7 @@ body {
 .c-2 {
     height: auto;
     width: 350px;
-    @include bp(teen-bear) {width: 250px;}
-    @include bp(baby-bear) {width: 200px; padding-top: 1.5rem;}
+    @include bp(teen-bear) {width: 300px;}
     object-fit: contain;
 }
 
@@ -356,8 +359,8 @@ body {
 
 .freshfusion-banner{
     width: 100%;
-    height: 40vh;
     object-fit: cover;
+    @include bp(teen-bear) {height: 40vh;}
 }
 
 .freshfusion-header{
@@ -365,8 +368,9 @@ body {
         margin: 0;
         font-family: Monster AG;
         font-size: 3rem;
-        @include bp(teen-bear) {font-size: 2rem;}
-        @include bp(baby-bear) {font-size: 1.6rem;}
+        letter-spacing: .2rem;
+       // @include bp(teen-bear) {font-size: 2rem;}
+     //   @include bp(baby-bear) {font-size: 1.6rem;}
     }
 }
 
@@ -384,11 +388,12 @@ body {
     flex-direction: row;
     //@include bp (teen-bear) {flex-direction: column;}
     @include bp (baby-bear) {flex-direction: column;}
-    justify-content: center;  
+    justify-content: space-evenly;  
     h4 {
-        font-size: 1.5rem; 
+        font-size: 1.8rem; 
         margin-top: 0;
         margin-bottom: 1rem;
+        letter-spacing: .2rem;
     }  
 }
 
@@ -447,12 +452,10 @@ body {
 
 .burger-img{
     width: 40vw;
-    @include bp (teen-bear) {width: 100%;}
-    @include bp (baby-bear) {width: 100%;}
-    height: 90vh;
-    @include bp (teen-bear) {height: 50vh;}
-    @include bp(baby-bear) {height: 30vh;}
+    height: 100vh;
     object-fit: cover;
+    @include bp (teen-bear) {width: 100%;}
+    @include bp (teen-bear) {height: 30vh;}
 }
 
 .mealprep-info{
@@ -493,8 +496,12 @@ body {
     color: white;
     font-weight: 800;
     border-radius: 25px;
-    margin-right: 25vw;
-    margin-left: 25vw;
+    font-size: 2.2rem;
+    @include bp(teen-bear) {margin-left: 25vw; margin-right: 25vw;}
+}
+
+.lps{
+    font-size: 2.2rem;
 }
 
 .cocinaimg{
@@ -532,6 +539,7 @@ body {
     h5{
         margin: 0;
     }
+    font-size: 2.4rem;
 }
 
 
@@ -544,8 +552,6 @@ body {
 
 .mf-img{
     width: 600px;
-    @include bp(teen-bear) {width: 500px;}
-    @include bp(baby-bear) {width: 300px;}
     height: auto;
     object-fit: cover;
 }
@@ -559,11 +565,11 @@ body {
 .mf-bg{
     background-color: #0F2051;
     color: white;
-    border-radius: 25px;
+    border-radius: 15px;
     font-weight: lighter;
 }
 
-.flight{
+.font-light{
     font-weight: lighter;
 }
 
@@ -572,14 +578,14 @@ body {
     width: 600px;
     height: auto;
     object-fit: cover;
-    @include bp(baby-bear) {display: none;}
+    @include bp(teen-bear) {display: none;}
 }
 .mfplanv{
     display: none;
     width: auto;
     height: 500px;
     object-fit: cover;
-    @include bp(baby-bear) {display: flex;}
+    @include bp(teen-bear) {display: flex;}
 }
 
 .mf-plans{
@@ -599,6 +605,13 @@ body {
     background-color: #0F2051;
     color: white;
     border-radius: 25px;
+}
+
+.bigger{
+    font-size: 2rem;
+}
+.mediumer{
+    font-size: 1.5rem;
 }
 
 
