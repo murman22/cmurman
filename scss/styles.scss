@@ -36,7 +36,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     //background-attachment: fixed;
-    background-image: url(../imgs/landing-banner.png);
+    background-image: url(../imgs/landing-banner.jpg);
     min-height: 100%;
 }
 
@@ -221,7 +221,7 @@ body {
     @include bp(teen-bear) {text-align: center; margin: 0; padding-left: .25rem; padding-right: .25rem;}
     @include bp(baby-bear) {text-align: center; margin: 0; padding-left: .25rem; padding-right: .25rem;}
     width: 85vw;
-    h4 { 
+    h3,h4 { 
         margin-left: 2rem;
         @include bp(teen-bear) {margin-left: 0}
         @include bp(baby-bear) {margin-left: 0;}
@@ -517,6 +517,7 @@ body {
         font-size: 2rem;
     }
 }
+
 
 .cookingcris{
     height: auto;

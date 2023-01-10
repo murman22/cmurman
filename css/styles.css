@@ -11,7 +11,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../imgs/landing-banner.png);
+  background-image: url(../imgs/landing-banner.jpg);
   min-height: 100%; }
 
 .banner-content {
@@ -215,13 +215,13 @@ body {
       margin: 0;
       padding-left: .25rem;
       padding-right: .25rem; } }
-  .aboutme-text h4 {
+  .aboutme-text h3, .aboutme-text h4 {
     margin-left: 2rem; }
     @media (max-width: 1024px) and (min-width: 600px) {
-      .aboutme-text h4 {
+      .aboutme-text h3, .aboutme-text h4 {
         margin-left: 0; } }
     @media (max-width: 600px) {
-      .aboutme-text h4 {
+      .aboutme-text h3, .aboutme-text h4 {
         margin-left: 0; } }
   .aboutme-text h6 {
     margin-left: 2rem; }
