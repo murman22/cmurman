@@ -1,7 +1,3 @@
-@font-face {
-  font-family: Monster AG;
-  src: url(../fonts/monsterag.ttf); }
-
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
@@ -320,17 +316,14 @@ body {
       width: 200px;
       padding-top: 1.5rem; } }
 
-.c-cfs {
-  font-size: 1rem; }
-
 .planes-kartikeya {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .planes-kartikeya h3 {
+  .planes-kartikeya h2 {
     margin: 0;
     text-align: center; }
-  .planes-kartikeya h5 {
+  .planes-kartikeya h4 {
     margin: 0;
     text-align: center;
     text-transform: uppercase; }
@@ -408,10 +401,6 @@ body {
     .plates {
       flex-direction: column;
       padding-top: 0; } }
-  .plates h4 {
-    font-size: 1.5rem;
-    margin-top: 0;
-    margin-bottom: 1rem; }
 
 .dp-1, .dp-2 {
   width: 50vw;
@@ -435,12 +424,10 @@ body {
       flex-direction: column; } }
   .dp-1 h2, .dp-2 h2 {
     margin: 0;
-    font-family: Monster AG;
     font-size: 2rem;
     letter-spacing: 0.2rem; }
   .dp-1 p, .dp-2 p {
-    margin: 0;
-    font-family: 'open Sans'; }
+    margin: 0; }
 
 .dp-2 {
   background-color: #80B834; }
@@ -506,16 +493,15 @@ body {
       padding-left: 5vw; } }
   .mealprep-info h1 {
     margin: 0;
-    font-size: 3.3rem; }
+    font-size: 2.8rem; }
     @media (max-width: 1024px) and (min-width: 600px) {
       .mealprep-info h1 {
-        font-size: 2.8rem; } }
+        font-size: 2.2rem; } }
     @media (max-width: 600px) {
       .mealprep-info h1 {
         font-size: 2rem; } }
   .mealprep-info h4 {
-    margin: 0;
-    font-size: 2rem; }
+    margin: 0; }
     @media (max-width: 1024px) and (min-width: 600px) {
       .mealprep-info h4 {
         font-size: 1.3; } }
@@ -523,8 +509,7 @@ body {
       .mealprep-info h4 {
         font-size: 1; } }
   .mealprep-info h6 {
-    margin: 0;
-    font-size: 1.5rem; }
+    margin: 0; }
     @media (max-width: 1024px) and (min-width: 600px) {
       .mealprep-info h6 {
         font-size: 1.3rem; } }
@@ -697,14 +682,8 @@ body {
 .footerlink {
   text-decoration: none; }
 
-.monster {
-  font-family: Monster AG; }
-
-.open-sans {
-  font-family: 'Open Sans'; }
-
-.bebas {
-  font-family: 'Bebas Neue'; }
+.montserrat {
+  font-family: Montserrat; }
 
 .row {
   display: flex;
