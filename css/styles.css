@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  font-display: swap; }
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif; }
